@@ -21,6 +21,19 @@ public class Contato implements Serializable {
 	private static final long serialVersionUID = 6002031808780083117L;
 
 	public Contato() {
+		super();
+	}
+
+	public Contato(Long id, String nome, String email, String motivo, Long idDestinatarioSistema, String mensagem, Date dataHoraCadastro, boolean ativo) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.email = email;
+		this.motivo = motivo;
+		this.idDestinatarioSistema = idDestinatarioSistema;
+		this.mensagem = mensagem;
+		this.dataHoraCadastro = dataHoraCadastro;
+		this.ativo = ativo;
 	}
 
 	@Id
