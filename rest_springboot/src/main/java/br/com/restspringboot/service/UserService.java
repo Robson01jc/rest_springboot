@@ -1,9 +1,9 @@
 package br.com.restspringboot.service;
 
-import br.com.restspringboot.model.Usuario;
+import br.com.restspringboot.model.User;
 
 public interface UserService {
-    void save(Usuario user);
+	User save(User user);
 
-    Usuario findByUsername(String username);
+	User findByEmail(String email);
 }

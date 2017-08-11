@@ -14,6 +14,7 @@ import br.com.restspringboot.model.Contato;
 import br.com.restspringboot.service.ContatoService;
 
 @RestController
+@RequestMapping("/contato")
 public class ContatoController {
 
 	@Autowired

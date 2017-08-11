@@ -1,9 +1,13 @@
 package br.com.restspringboot.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-import br.com.restspringboot.model.Usuario;
+import br.com.restspringboot.model.User;
 
-public interface UserRepository extends JpaRepository<Usuario, Long> {
-	Usuario findByUsername(String username);
+@Repository
+public interface UserRepository extends CrudRepository<User, Long> {
+	User save(User user);
+
+	User findByEmail(String email);
 }
